@@ -1,4 +1,4 @@
-async function fetchData() {
+async function fetchData() {                                                //copy the github.com/SampurnaC/chrome_extension_fcc
     const res=await fetch ("https://api.coronavirus.data.gov.uk/v1/data");
     const record=await res.json();
     document.getElementById("date").innerHTML=record.data[0].date;
